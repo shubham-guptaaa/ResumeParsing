@@ -13,7 +13,6 @@
   "author": "shubham gupta",
   "license": "ISC",
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.80",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
