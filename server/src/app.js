@@ -1,6 +1,11 @@
 import express from "express";
 import cors from "cors";
+import { DOMMatrix } from "@napi-rs/canvas";
 import matchRoutes from "./routes/match.routes.js";
+
+if (typeof globalThis.DOMMatrix === "undefined") {
+  globalThis.DOMMatrix = DOMMatrix;
+}
 
 const app = express();
 app.use(cors());
