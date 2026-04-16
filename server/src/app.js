@@ -21,4 +21,4 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: "An unexpected error occurred." });
 });
 
-export { app };
+export default app;
