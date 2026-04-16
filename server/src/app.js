@@ -8,6 +8,10 @@ app.use(express.json({ limit: "5mb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1", matchRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Resume Parsing Backend is Running");
+});
+
 app.get("/health", (_req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
